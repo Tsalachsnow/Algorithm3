@@ -35,5 +35,16 @@ public class AlgoArraysApplication {
         int[][]matrix = {{1,2,3},{4,5,6},{7,8,9}};
         rg.rotateMatrix(matrix);
         System.out.println(Arrays.deepToString(matrix));
+
+        Array6_sort qr = new Array6_sort();
+        int[] arr = {5,4,1,0,5,95,4,-100,200,0};
+        int arrSize = 10;
+        qr.selectionSort(arr, arrSize);
+        qr.obj.printArray(arr, arrSize);
+
+        Array6_sort1 fg = new Array6_sort1();
+        int[] arr1 = {2, 5, 7, 8, 9, 4, 3,1};
+        int n = 7;
+        fg.test(arr1, n);
     }
 }
